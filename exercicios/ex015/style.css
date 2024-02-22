@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+
+
+body {
+    padding: 10px
+}
+h1#principal {
+    text-align: center;
+}
+
+
+
+div:hover {
+    color: red;
+}
+
+

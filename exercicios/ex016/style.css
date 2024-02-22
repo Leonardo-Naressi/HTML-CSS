@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkred;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+a:active {
+    color: rgb(50, 129, 40);
+}
+
+p:empty {
+    background-image: linear-gradient(to top, wheat, rgb(214, 194, 157));
+    background-color: wheat;
+    box-shadow: 2px 2px 2px rgb(185, 168, 136);
+    height: 10em;
+    width: 10em;
+}   
