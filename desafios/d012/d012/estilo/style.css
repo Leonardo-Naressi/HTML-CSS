@@ -75,12 +75,30 @@ section.normal {
 section.imagem {
     background-color: rgb(29, 27, 27);
     color: white;
+    box-shadow: inset 5px 5px 15px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 section.imagem p {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.226);
+    text-shadow: 2px 2px 8px black;
+    padding: 5px;
 }
+
+section#img01 { /* joaninha */
+    background-image: url(../imagens/background001.jpg);
+    background-position: top center;
+}
+
+section#img02 { /* livro */
+    background-image: url(../imagens/background002.jpg);
+    background-position: center center;
+}
+
+
 footer {
     padding: 10px;
     background-color: black;
