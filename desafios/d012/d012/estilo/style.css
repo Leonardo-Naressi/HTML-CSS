@@ -4,10 +4,26 @@
     margin: 0px;
     padding: 0px;
 }
+@font-face {
+    font-family: 'Passion One';
+    src: url(PassionOne-Regular.ttf), format('truetype');
+}
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url(Sriracha-Regular.ttf);
+}
+
+:root {
+    --fonte-normal: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-cursiva: 'Sriracha', cursive;
+    --fonte-titulo: 'Passion One', cursive;
+}
 
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte-normal);
 }
 
 header {
@@ -15,12 +31,21 @@ header {
     color: white;
     text-align: center;
     padding: 50px;
+    
 }
 
 header h1 {
     padding-bottom: 10px;
     font-variant: small-caps;
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+    font-size: 10vw;
+}
 
+header p {
+    font-family: var(--fonte-cursiva);
+    font-size: 1em;
+    font-weight: normal;
 }
 
 a {
@@ -34,10 +59,12 @@ a:hover {
 }
 
 section {
+    font-family: var(--fonte-cursiva);
     line-height: 2em;
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
+    font-size: 4vw;
 }
 
 section.normal {
@@ -51,7 +78,7 @@ section.imagem {
 }
 
 section.imagem p {
-    width: 400px;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.226);
 }
 footer {
