@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+
+menu {
+    display: none;
+}
+/* o segmento do site que preferir,
+    nesse caso usamos o último article */
+article#ultimo-art::after {
+    content: 'Esse artigo foi impresso através do site www.cev.com';
+}   /* A mgs de content será apresentada após (after) o article de  
+    ID="ultimo-art" */
